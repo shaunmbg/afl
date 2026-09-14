@@ -271,6 +271,8 @@ function renderGrid(){
       const g = grid[name][String(r)];
       if(!g){
         html += '<td style="color:var(--text-muted);background:var(--surface-0);">bye</td>';
+      } else if(g.scheduled && g.opp === null){
+        html += '<td style="background:var(--surface-1);color:var(--text-muted);">N/A</td>';
       } else if(g.scheduled){
         const oppAb = teams[g.opp] ? teams[g.opp].ab : g.opp;
         html += '<td style="background:var(--surface-1);color:var(--text-muted);">'
