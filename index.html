@@ -83,7 +83,7 @@
 <div id="view-ladder" class="view">
   <div class="cards">
     <div class="card"><p class="label">Ladder leader</p><p class="value">Fremantle</p></div>
-    <div class="card"><p class="label">Latest completed round</p><p class="value">29 of 24</p></div>
+    <div class="card"><p class="label">Latest completed round</p><p class="value">24 of 24</p></div>
     <div class="card"><p class="label">Hottest team</p><p class="value">Sydney</p></div>
     <div class="card"><p class="label">Coldest team</p><p class="value">West Coast</p></div>
   </div>
@@ -126,18 +126,18 @@
 
 <script>
 const teams = {
-  "Fremantle":{ab:"FR",p:27,w:21,d:0,l:6,pct:130.2,pts:84,form:["L","L","W","W","L"]},
-  "Sydney":{ab:"SY",p:25,w:19,d:0,l:6,pct:135,pts:76,form:["W","W","W","W","L"]},
-  "Hawthorn":{ab:"HW",p:25,w:16,d:2,l:7,pct:119.6,pts:68,form:["L","D","W","W","L"]},
-  "Geelong":{ab:"GE",p:25,w:16,d:0,l:9,pct:121.2,pts:64,form:["W","W","W","W","L"]},
-  "Brisbane Lions":{ab:"BL",p:27,w:19,d:0,l:8,pct:118.5,pts:76,form:["W","L","W","W","W"]},
-  "Adelaide":{ab:"AD",p:25,w:16,d:0,l:9,pct:114,pts:64,form:["W","L","W","W","L"]},
-  "Melbourne":{ab:"ME",p:24,w:15,d:0,l:9,pct:108.4,pts:60,form:["W","W","W","L","L"]},
-  "Western Bulldogs":{ab:"WB",p:25,w:14,d:1,l:10,pct:94.9,pts:58,form:["L","D","W","W","L"]},
+  "Fremantle":{ab:"FR",p:23,w:19,d:0,l:4,pct:137.2,pts:76,form:["L","L","W","W","L"]},
+  "Sydney":{ab:"SY",p:23,w:18,d:0,l:5,pct:136.1,pts:72,form:["W","W","W","W","L"]},
+  "Hawthorn":{ab:"HW",p:23,w:15,d:2,l:6,pct:120.1,pts:64,form:["L","D","W","W","L"]},
+  "Geelong":{ab:"GE",p:23,w:15,d:0,l:8,pct:122.3,pts:60,form:["W","W","W","W","L"]},
+  "Brisbane Lions":{ab:"BL",p:23,w:16,d:0,l:7,pct:121.7,pts:64,form:["W","L","W","W","W"]},
+  "Adelaide":{ab:"AD",p:23,w:15,d:0,l:8,pct:117.3,pts:60,form:["W","L","W","W","L"]},
+  "Melbourne":{ab:"ME",p:23,w:15,d:0,l:8,pct:109.6,pts:60,form:["W","W","W","L","L"]},
+  "Western Bulldogs":{ab:"WB",p:23,w:13,d:1,l:9,pct:95.4,pts:54,form:["L","D","W","W","L"]},
   "North Melbourne":{ab:"NM",p:23,w:9,d:0,l:14,pct:88.8,pts:36,form:["L","L","W","L","L"]},
-  "Collingwood":{ab:"CW",p:24,w:12,d:2,l:10,pct:102.1,pts:52,form:["L","W","D","L","L"]},
+  "Collingwood":{ab:"CW",p:23,w:12,d:2,l:9,pct:102.4,pts:52,form:["L","W","D","L","L"]},
   "Gold Coast":{ab:"GC",p:23,w:9,d:0,l:14,pct:94.5,pts:36,form:["L","L","W","L","W"]},
-  "Carlton":{ab:"CA",p:25,w:13,d:1,l:11,pct:100.7,pts:54,form:["W","D","W","W","L"]},
+  "Carlton":{ab:"CA",p:23,w:12,d:1,l:10,pct:101.5,pts:50,form:["W","D","W","W","L"]},
   "St Kilda":{ab:"SK",p:23,w:10,d:0,l:13,pct:102.8,pts:40,form:["W","L","L","W","L"]},
   "GWS":{ab:"GW",p:23,w:10,d:0,l:13,pct:98.9,pts:40,form:["L","W","L","W","L"]},
   "Port Adelaide":{ab:"PA",p:23,w:7,d:0,l:16,pct:88,pts:28,form:["L","L","L","L","W"]},
@@ -184,7 +184,7 @@ const grid = {"Sydney":{"1":{"opp":"Carlton","for":132,"against":69,"ha":"H","re
 "West Coast":{"2":{"opp":"Gold Coast","for":72,"against":131,"ha":"A","result":"L","venue":"CARR"},"3":{"opp":"North Melbourne","for":111,"against":94,"ha":"H","result":"W","venue":"PERTH"},"4":{"opp":"Port Adelaide","for":92,"against":90,"ha":"A","result":"W","venue":"AO"},"5":{"opp":"Sydney","for":35,"against":163,"ha":"H","result":"L","venue":"PERTH"},"6":{"opp":"Geelong","for":76,"against":122,"ha":"A","result":"L","venue":"NORW"},"7":{"opp":"Fremantle","for":41,"against":97,"ha":"H","result":"L","venue":"PERTH"},"8":{"opp":"St Kilda","for":42,"against":143,"ha":"A","result":"L","venue":"DOCK"},"9":{"opp":"Richmond","for":88,"against":99,"ha":"H","result":"L","venue":"PERTH"},"10":{"opp":"Melbourne","for":67,"against":99,"ha":"A","result":"L","venue":"DOCK"},"11":{"opp":"GWS","for":88,"against":71,"ha":"H","result":"W","venue":"PERTH"},"12":{"opp":"Collingwood","for":82,"against":92,"ha":"A","result":"L","venue":"MCG"},"13":{"opp":"Essendon","for":85,"against":55,"ha":"H","result":"W","venue":"PERTH"},"14":{"opp":"Port Adelaide","for":71,"against":77,"ha":"H","result":"L","venue":"PERTH"},"15":{"opp":"North Melbourne","for":73,"against":74,"ha":"A","result":"L","venue":"PERTH"},"17":{"opp":"Carlton","for":64,"against":117,"ha":"A","result":"L","venue":"Docklands"},"18":{"opp":"Adelaide","for":74,"against":99,"ha":"H","result":"L","venue":"Perth Stadium"},"19":{"opp":"Western Bulldogs","for":70,"against":86,"ha":"A","result":"L","venue":"Docklands"},"20":{"opp":"Brisbane Lions","for":69,"against":93,"ha":"H","result":"L","venue":"Perth Stadium"},"21":{"opp":"Fremantle","for":42,"against":112,"ha":"A","result":"L","venue":"Perth Stadium"},"22":{"opp":"Richmond","for":73,"against":84,"ha":"A","result":"L","venue":"M.C.G."},"23":{"opp":"Collingwood","for":98,"against":117,"ha":"H","result":"L","venue":"Perth Stadium"},"24":{"opp":"GWS","for":57,"against":111,"ha":"A","result":"L","venue":"Sydney Showground"},"25":{"opp":"Hawthorn","for":45,"against":107,"ha":"H","result":"L","venue":"Perth Stadium"},"26":{"opp":null,"venue":"TBC","ha":null,"scheduled":true,"stage":"WF"},"27":{"opp":null,"venue":"TBC","ha":null,"scheduled":true,"stage":"QE"},"28":{"opp":null,"venue":"TBC","ha":null,"scheduled":true,"stage":"SF"},"29":{"opp":null,"venue":"TBC","ha":null,"scheduled":true,"stage":"PF"},"30":{"opp":null,"venue":"TBC","ha":null,"scheduled":true,"stage":"GF"}},
 "Essendon":{"2":{"opp":"Hawthorn","for":83,"against":145,"ha":"H","result":"L","venue":"MCG"},"3":{"opp":"Port Adelaide","for":70,"against":133,"ha":"A","result":"L","venue":"AO"},"4":{"opp":"North Melbourne","for":69,"against":81,"ha":"H","result":"L","venue":"DOCK"},"5":{"opp":"Western Bulldogs","for":65,"against":99,"ha":"A","result":"L","venue":"DOCK"},"6":{"opp":"Melbourne","for":113,"against":68,"ha":"H","result":"W","venue":"AO"},"7":{"opp":"Gold Coast","for":110,"against":119,"ha":"A","result":"L","venue":"CARR"},"8":{"opp":"Collingwood","for":60,"against":137,"ha":"H","result":"L","venue":"MCG"},"9":{"opp":"Brisbane Lions","for":79,"against":143,"ha":"H","result":"L","venue":"DOCK"},"10":{"opp":"GWS","for":89,"against":103,"ha":"A","result":"L","venue":"SSG"},"11":{"opp":"Fremantle","for":61,"against":104,"ha":"H","result":"L","venue":"MCG"},"12":{"opp":"Richmond","for":56,"against":74,"ha":"A","result":"L","venue":"MCG"},"13":{"opp":"West Coast","for":55,"against":85,"ha":"A","result":"L","venue":"PERTH"},"14":{"opp":"Carlton","for":67,"against":72,"ha":"H","result":"L","venue":"DOCK"},"15":{"opp":"Melbourne","for":50,"against":95,"ha":"A","result":"L","venue":"MCG"},"17":{"opp":"North Melbourne","for":65,"against":79,"ha":"A","result":"L","venue":"Docklands"},"18":{"opp":"St Kilda","for":50,"against":117,"ha":"H","result":"L","venue":"Docklands"},"19":{"opp":"Brisbane Lions","for":59,"against":149,"ha":"A","result":"L","venue":"Gabba"},"20":{"opp":"GWS","for":67,"against":64,"ha":"H","result":"W","venue":"Docklands"},"21":{"opp":"Hawthorn","for":39,"against":132,"ha":"A","result":"L","venue":"M.C.G."},"22":{"opp":"Adelaide","for":73,"against":145,"ha":"H","result":"L","venue":"Docklands"},"23":{"opp":"Geelong","for":50,"against":117,"ha":"A","result":"L","venue":"Kardinia Park"},"24":{"opp":"Sydney","for":76,"against":112,"ha":"H","result":"L","venue":"M.C.G."},"25":{"opp":"Port Adelaide","for":95,"against":104,"ha":"H","result":"L","venue":"Docklands"},"26":{"opp":null,"venue":"TBC","ha":null,"scheduled":true,"stage":"WF"},"27":{"opp":null,"venue":"TBC","ha":null,"scheduled":true,"stage":"QE"},"28":{"opp":null,"venue":"TBC","ha":null,"scheduled":true,"stage":"SF"},"29":{"opp":null,"venue":"TBC","ha":null,"scheduled":true,"stage":"PF"},"30":{"opp":null,"venue":"TBC","ha":null,"scheduled":true,"stage":"GF"}}};
 
-const teamOrder = ["Fremantle","Sydney","Brisbane Lions","Hawthorn","Geelong","Adelaide","Melbourne","Western Bulldogs","Carlton","Collingwood","St Kilda","GWS","Gold Coast","North Melbourne","Port Adelaide","West Coast","Richmond","Essendon"];
+const teamOrder = ["Fremantle","Sydney","Brisbane Lions","Hawthorn","Geelong","Adelaide","Melbourne","Western Bulldogs","Collingwood","Carlton","St Kilda","GWS","Gold Coast","North Melbourne","Port Adelaide","West Coast","Richmond","Essendon"];
 const numRounds = 30;
 
 function formDot(r){
